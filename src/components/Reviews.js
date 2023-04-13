@@ -3,30 +3,39 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Collapse from 'react-bootstrap/Collapse';
 
-function Reviews() {
+function Reviews({reviewData}) {
   const [open, setOpen] = useState(false);
   return (
     <div>
-       <Button
+       <Button className='bg-warning'
         onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
         aria-expanded={open}
       >
-        click
+      Reviews
       </Button>
-      <div style={{ minHeight: '150px' }}>
+      
         <Collapse in={open} dimension="width">
           <div id="example-collapse-text">
+            {
+              reviewData.map(item=>(
+                   
             <Card body style={{ width: '400px' }}>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident.
+              <h6><strong className='text-warning'> {item.name} : {item.date}</strong></h6>
+              <p>Rating:  {item.rating}</p>
+              <p>Comments: {item.comments}</p>
+
+              
             </Card>
+              ))
+
+          
+              }
           </div>
+
         </Collapse>
       </div>
-    </div>
+  
   )
 }
 

@@ -11,9 +11,9 @@ function Header() {
           <Navbar.Brand href="/" id='d1'>
             <img
               alt=""
-              src=""
-              width="30"
-              height="30"
+              src="https://i.postimg.cc/SNzVdhqg/ns.jpg"
+              width="50"
+              height="40"
               className="d-inline-block align-top"
             />{' '}
             NikkIshA Restaurant
