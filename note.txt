@@ -1,0 +1,81 @@
+React
+------
+
+create React - npx create-react-app appName
+ run React   - npm start
+
+ building blocks of React
+ ------------------------
+
+ Html
+ Css
+ Js
+
+ Angular                                        React
+---------                                      -------
+ -Framework of Js                               -Library of Js
+ -real dom                                      -virtual dom
+ 
+ Advantages of React
+ -------------------
+ 1. react uese virtual dom (faster)
+ 2. reusable components
+ 3. jsx (javaScript xml) mixing of js&html
+ 4 fast and flexible
+
+
+Components in React
+-------------------
+
+1. Class based    - statefull components
+2. Function based - stateless components
+
+statefull components
+stateless components
+
+-react hook
+
+state
+---------
+
+object used to store datas iniside a component in react
+
+useState - react
+
+props
+-----
+
+to share datas from parent to child component
+destructing
+
+API call In Js
+--------------
+
+Ajax - Asynchronous javaScript and XML
+----
+
+-XmlHttp
+-fetch
+-asynch await
+
+first working hook of a component
+---------------------------------
+
+useEffect - react
+
+Redirection/Routing in React
+----------------------------
+
+react-router-dom - Library used for routing 
+
+imbulid
+------
+Brower router - wrap the main component iniside brower router component
+Router        - wrap the component iniside Router which need redirection    
+Routes        - wrap all the router if we set more than one component paths
+
+Link - a component in react-router-dom used for redirection
+
+useParams - hook in react-router-dom used to access params
+
+

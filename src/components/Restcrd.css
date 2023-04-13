@@ -1,0 +1,6 @@
+#d1{
+    transition: .5s ease-in-out;
+}
+#d1:hover{
+    transform: scale(1.02);
+}
