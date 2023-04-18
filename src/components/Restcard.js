@@ -1,16 +1,16 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import './Restcrd.css'
-
+import "./Restcrd.css";
 
 function Restcard({ restdata }) {
   return (
     <>
       <Link
         to={`/view-restuarant/${restdata.id}`}
-        style={{ textDecoration: "none", color: "white" }}>
-        <Card style={{ width: "18rem" }} id='d1'>
+        style={{ textDecoration: "none", color: "white" }}
+      >
+        <Card style={{ width: "18rem" }} id="d1">
           <Card.Img variant="top" src={restdata.photograph} />
           <Card.Body>
             <Card.Title className="text-center">{restdata.name}</Card.Title>

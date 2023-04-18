@@ -79,3 +79,11 @@ Link - a component in react-router-dom used for redirection
 useParams - hook in react-router-dom used to access params
 
 
+http methods in react
+----------------------
+
+axios - Library used to call API
+
+useDispatch - hook used to dispatch a function in a component
+ useSelector - hook used to access data from component 
+
