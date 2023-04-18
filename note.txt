@@ -85,5 +85,5 @@ http methods in react
 axios - Library used to call API
 
 useDispatch - hook used to dispatch a function in a component
- useSelector - hook used to access data from component 
+useSelector - hook used to access data from component 
 

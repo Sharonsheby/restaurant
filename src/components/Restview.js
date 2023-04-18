@@ -6,26 +6,28 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import './Restcrd.css'
 import Reviews from './Reviews';
 import OperatingTime from './OperatingTime';
+import {useSelector} from 'react-redux'
 
 
 function Restview() {
-  var [ Allrestaurants,setRestaurant]=useState([])
-  const fetchRest = async()=>{
-    const result  = await fetch('/restaurants.json')
-    result.json().then(data=>{
-      setRestaurant(data.restaurants)
-    })
+  // var [ Allrestaurants,setRestaurant]=useState([])
+  // const fetchRest = async()=>{
+  //   const result  = await fetch('/restaurants.json')
+  //   result.json().then(data=>{
+  //     setRestaurant(data.restaurants)
+  //   })
 
-  }
+  // }
   
   const params = useParams()
   // console.log(params.id);
-  console.log(Allrestaurants);
+//   console.log(Allrestaurants);
+const {restaurantList}= useSelector(state=>state.restaurantReducer)
 
- const restuarant= Allrestaurants.find(item=>item.id==params.id)
- console.log(restuarant);
+ const restuarant= restaurantList.find(item=>item.id==params.id)
+//console.log(restuarant);
   useEffect(()=>{
-    fetchRest()
+    // fetchRest()
   },[]
   )
   return (
